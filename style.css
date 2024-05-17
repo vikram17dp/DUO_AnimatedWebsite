@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+    color: #fff;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#purple{
+    height: 100vh;width: 100vw;
+    background-color: #EDBFFF;
+    top:0;
+    position: fixed;
+    z-index: 100;
+    opacity: 0;
+    display: none;
+    transition: opacity ease 1s;
+}
+.cursor{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: plum;
+    position: fixed;
+    z-index: 8;
+    transition: background-image ease 0.5s;
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: difference;
+    transition: left linear 0.1s top linear 0.1s;
+}
+.main{
+    background-color: #0F0D0D;
+    cursor: none;
+}
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+}
+.nav{
+    width: 100%;
+    height: 30px;
+    /* background-color: red; */
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+   display: flex;
+   gap: 30px;
+   padding: 0 25px;
+   z-index: 102;
+   mix-blend-mode: difference;
+}
+.nav img{
+    height: 30px;
+    width: 50px;
+    padding: 4px;
+}
+.nav-part2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    
+}
+.nav .circle{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.nav h4{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+}
+.nav h4:nth-child(1){
+    text-decoration: underline;
+}
+.page1 h1{
+    font-size: 8vw;
+    font-weight: 400;
+    margin-top: 10vw;
+    margin-left: 8vw;
+    font-family: pp mori;
+}
+.page1 h2{
+    font-size: 8vw;
+    font-weight: 400;
+    font-family: pp mori;
+    margin-left: 26vw;
+}
+.page1 video {
+    width: 60%;
+    margin-top: 10vw;
+    position: relative;
+    left:50%;
+    transform: translate(-50%,0);
+}
+.page2 {
+    min-height: 75vh;
+    width: 100%;
+    padding: 26px 6vw;
+    position: relative;
+    z-index: 9;
+    border-bottom: 2px solid #a09696;
+}
+.page2 h1{
+    font-size: 7vw;
+    font-weight: 300;
+    color:#111;
+}
+.page2-container{
+    height: 60vh;
+    width: 100%;
+    /* background-color: pink; */
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    /* padding: 0 30px; */
+    align-items: center;
+}
+.page2-left{
+    height: 50vh;
+    width: 40%;
+    padding-top: 30px;
+    /* background-color: blue; */
+}
+.page2-left h2{
+    font-size: 4vw;
+    font-weight: 400;
+    color: #111;
+    line-height: 4vw;
+}
+.page2-right{
+    height: 30vh;
+    width: 40%;
+    /* background-color: blue; */
+}
+.page2-right p{
+    font-size: 25px;
+    font-weight: 500;
+   
+    color:#111;
+    margin-bottom: 20px;
+}
+.page2-right button{
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    padding: 0 4px;
+    margin-top: 15px;
+    cursor: pointer;
+    color: #111;
+    background-color: pink;
+}
+.page3{
+    height: 200vh;
+    width: 100%;
+    padding-top: 80px;
+    position: relative;
+    z-index: 9;
+    border-bottom: 2px solid #a09696;  
+}
+.page3 h1{
+    font-size: 6.8vw;
+    font-weight: 500;
+    color: #111;
+    margin-left: 50px;
+}
+.page3-part2{
+ display: flex;
+ align-items: flex-start;
+ justify-content: space-between;
+ width: 100%;
+ margin: 20px;
+    
+}
+.page3-part2 img{
+   height: 350px;
+   margin-top: 90px;
+   margin-left: 10px;
+}
+.page3-part2 video{
+    height: 350px;
+    width: 50%;
+    margin-right: 20px;
+}
+.page3 h2{
+    font-size: 6vw;
+    color: #111;
+    font-weight: 400;
+    margin-top: 8vw;
+    margin-left: 50px;
+}
+.page3-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.circle-page3{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: pink;
+    margin-top: 8vw;
+    margin-right: 80px;
+}
+.circle-page3 p{
+   top: 40%;
+    text-align: center;
+    color: red;
+    font-size: 18px;
+    font-weight: 100;
+    position: relative;    
+}
+.circle-page3:hover{
+    background-color: #0F0D0D;
+    transition-duration: 1s;
+}
+
+.page4{
+    height: 110vh;
+    width: 100%;
+    /* background-color: #0F0D0D; */
+    /* margin-top: 15px; */
+    position: relative;
+    z-index: 9;
+    padding: 170px 100px;
+    border-bottom: 2px solid #a09696; 
+    
+}
+.elem{
+    /* background-color: salmon; */
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+   
+}
+.elem h1{
+    font-size: 7vw;
+    font-weight: 600;
+    transition: all ease-out 0.5s;
+   
+}
+.text-div{
+    height: 120px;
+    /* background-color: lightblue; */
+    overflow: hidden;
+}
+.elem img{
+    height: 25vw;
+    padding: 20px;
+    width: 22vw;
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(2deg);
+    
+}
+.elem img:nth-child(1){
+    left: 2%;
+}
+.elem img:nth-child(3){
+    right: 2%;
+}
+.elem:hover h1{
+    transform: translateY(-100%);
+    color: #EDBFFF;
+}
+.elem:hover img{
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+}
+.page5{
+    min-height: 100vh;
+    width: 100%;
+    background-color:#0F0D0D;
+    position: relative;
+    z-index: 9;
+}
+.page5-h2{
+    font-size: 4vw;
+    font-weight: 500;
+    /* text-align: center; */
+    padding: 50px;
+    text-transform: uppercase;
+
+}
+.box{
+    height: 70px;
+    padding: 0px 30px;
+    margin: 0px 60px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    /* text-align: center; */
+    border-top: 0.3px solid #fff;
+    align-items: center;
+}
+.box:nth-last-child(1){
+    border-bottom: 0.3px solid #fff;
+}
+
+
+
+
+
+.footer{
+    height: 120vh;
+    width: 100%;
+    background-color: #EDBFFF;
+   display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.para{
+    display: inline;
+}
+.footer h1{
+    font-weight: 500;
+    font-size: 18vh;
+    color: #0F0D0D;
+    padding-top: 230px;
+    padding-left: 90px;
+   
+}
+.footer p{
+    font-size: 25px;
+    padding-left: 90px;
+    padding-top: 290px;
+    color: #0F0D0D;
+    font-weight: 400;
+}
+.circle-footer{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: pink;
+    padding-top: 60px;
+    margin-top: 260px;
+    margin-right: 100px;
+    text-align: center;
+    color: red;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 100;
+    position: relative; 
+    justify-content: center;
+}
